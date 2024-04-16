@@ -56,11 +56,11 @@ public class GiftCardServiceImpl {
 				card.setActive(false);
 				break;
 			}
-			case AppConst.TOP_UP: {
-				if (!card.isActive())
-					throw new InvalidCardException("Cannot proceed with topup! Card is inactive!!");
-				break;
-			}
+//			case AppConst.TOP_UP: {
+//				if (!card.isActive())
+//					throw new InvalidCardException("Cannot proceed with topup! Card is inactive!!");
+//				break;
+//			}
 		}
 		giftCardService.updateCard(card);
 
